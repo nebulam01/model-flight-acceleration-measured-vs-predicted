@@ -1,10 +1,10 @@
 # Model-Flight Acceleration — Measured vs. Predicted
 
-An interactive **Google Colab** engineering tool built with `ipywidgets`, `NumPy`, `Pandas`, and `Matplotlib` to compare **predicted vertical acceleration (`[g]`)** against **measured acceleration (`[g]`)** during model-flight maneuvers using either a manual peak input (`Manual Peak Value [g]`) or simulated phone IMU data (`Simulated Phone IMU`), with an explanatory cause-and-effect verdict[cite: 6].
+An interactive **Google Colab** engineering tool built with `ipywidgets`, `NumPy`, `Pandas`, and `Matplotlib` to compare **predicted vertical acceleration (`[g]`)** against **measured acceleration (`[g]`)** during model-flight maneuvers using either a manual peak input (`Manual Peak Value [g]`) or simulated phone IMU data (`Simulated Phone IMU`), with an explanatory cause-and-effect verdict.
 
 ## Overview
 
-Evaluating model-flight dynamics involves comparing expected load factors from a predictive model with measured sensor acceleration (`[g]`)[cite: 6]. This notebook works directly inside Google Colab without requiring a physical phone, outdoor flight test, or external CSV file, and explains why differences appear between prediction and measurement[cite: 6].
+Evaluating model-flight dynamics involves comparing expected load factors from a predictive model with measured sensor acceleration (`[g]`). This notebook works directly inside Google Colab without requiring a physical phone, outdoor flight test, or external CSV file, and explains why differences appear between prediction and measurement.
 
 ### Supported Flight Maneuvers
 - **Smooth Glide & Bank Turn**
@@ -30,4 +30,4 @@ Evaluating model-flight dynamics involves comparing expected load factors from a
 ## Engineering Notes
 
 - Differences between predicted and measured acceleration typically stem from maneuver intensity differences, unmodeled gusts/turbulence, sensor bias, and IMU noise.
-- Comparing synthetic/manual inputs with real flight logs helps validate load-factor models and error metrics before physical flight testing[cite: 6].
+- Comparing synthetic/manual inputs with real flight logs helps validate load-factor models and error metrics before physical flight testing.
